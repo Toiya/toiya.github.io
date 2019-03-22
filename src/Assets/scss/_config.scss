@@ -1,0 +1,46 @@
+/*
+Vars
+*/
+$black: #191919;
+$white: #e8e8e8;
+$lightgray: #a5a5a5;
+$darkgray: #424242;
+$details: #f4aa42;
+
+$footer-height: 80px;
+
+@mixin translateY($e) {
+  -webkit-transform: translateY($e);
+  -moz-transform: translateY($e);
+  transform: translateY($e);
+}
+
+@mixin transition($e) {
+  -webkit-transition: $e;
+  -moz-transition: $e;
+  transition: $e;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: $black;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  @include transition(.2s ease-in-out);
+  cursor: pointer;
+  color: $white;
+
+  &:hover {
+    @include transition(.2s ease-in-out);
+    color: $details;
+  }
+}
+
+.container-fluid {
+  line-height: 24px;
+}

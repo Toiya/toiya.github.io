@@ -1,0 +1,102 @@
+@import "_config.scss";
+
+.container-fluid {
+  padding: 2em;
+
+  h1 {
+    text-align: center;
+    padding: 1em;
+  }
+}
+
+header {
+  position: relative;
+  display: block;
+  width: 100%;
+  background-color: $black;
+  color: $white;
+  height: 90px;
+
+  a {
+    font-size: 19px;
+    line-height: normal;
+    color: $white;
+  }
+
+  .logo {
+    position: absolute;
+    top: 50%; left: 50px;
+    @include translateY(-50%);
+  }
+
+  nav,
+  nav ul,
+  nav ul li {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+    position: absolute;
+    top: 50%; right: 50px;
+    @include translateY(-50%);
+
+    ul li {
+      list-style-type: none;
+      display: inline-block;
+      margin-right: 20px;
+
+      &.last {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.container-fluid {
+  a {
+    color: $black;
+  }
+
+  p {
+    color: $lightgray;
+  }
+}
+
+.phantomStyle {
+  display: block;
+  padding: 2px;
+  height: 60px;
+  width: 100%;
+}
+
+footer {
+  background-color: $black;
+  position: fixed;
+  height: $footer-height;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  height: $footer-height;
+  border-top: 2px solid $darkgray;
+
+  .icons {
+      text-align: center;
+      height: inherit;
+
+      .centered {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      a {
+          i {
+            margin: 10px;
+          }
+      }
+    }
+  }
