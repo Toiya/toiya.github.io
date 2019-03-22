@@ -2,6 +2,7 @@
   "name": "iralaurin",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://toiya.github.io",
   "dependencies": {
     "axios": "^0.18.0",
     "font-awesome": "^4.7.0",
@@ -15,6 +16,7 @@
     "redux": "^4.0.1"
   },
   "scripts": {
+    "deploy": "npm run build&&gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -30,6 +32,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "gulp": "^4.0.0",
     "gulp-changed": "^3.2.0",
     "gulp-clean-css": "^4.0.0",
