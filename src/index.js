@@ -8,4 +8,6 @@ import rootReducer from './reducers/rootReducer'
 
 const store = createStore(rootReducer);
 
+console.log("Your process.env.PUBLIC_URL", process.env.PUBLIC_URL);
+
 ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
